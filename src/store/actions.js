@@ -1,18 +1,13 @@
 
 import axios from 'axios'
-import ip from '../../src/ip.js'
-
+import '../mock/index.js'
 export default {
 	getQData({commit},grade) {
-
-		let url = ip.RESTPATH+'rest/getReadingMatchQuestionByCourseLevelId/'+grade;
-		axios.get(url)
+		axios.get('http://test.getquestion')
 			.then(function (response) {
-
-				commit('GET_QUESTION',{data:response.data});
-			})
-			.catch(function (error) {
-				console.log(error);
+					console.log('mock数据');
+					console.log(response);
+					commit('GET_QUESTION',{data:response.data});
 			})
 	},
 	nextQuestion({commit},self){
@@ -28,7 +23,8 @@ export default {
 		}
 		console.log('提交的参数');
 		console.log(postdata);
-		let url = ip.RESTPATH+'rest/postReadingMatchQuestionResults';
+		
+		let url = 'http//test.postanswer';
 		console.log(postdata);
 		axios.post(url,postdata)
 			.then(function(res) {

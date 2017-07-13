@@ -34,7 +34,6 @@
 <script>
 
 import axios from 'axios';
-import ip from '../../src/ip.js'
 export default {
 
   data() {
@@ -50,10 +49,11 @@ export default {
     getallRank(){
       let self = this;
       let grade = sessionStorage.getItem('grade')
-      axios.get(ip.RESTPATH+'rest/getAllUsersRank',{params:{'grade':grade}})
+      axios.get('http://test.getrank')
         .then(function (res) {
           console.log(res);
           self.allRank=res.data;
+          console.log(JSON.stringify(res.data));
         })
         .catch(function (err) {
           console.log(err);
