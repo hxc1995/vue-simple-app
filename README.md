@@ -1,21 +1,15 @@
-# rc
+#简单的vue全家桶做的单页面应用
 
-> reading contest
 
-## Build Setup
+#克隆项目到本地 
+git clone git@github.com:hxc1995/vue-simple-app.git
 
-``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 浏览器打开localhost:8001
 npm run dev
 
-# build for production with minification
+#打包压缩本地文件,打开dist/index.html
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
