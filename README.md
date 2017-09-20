@@ -9,7 +9,3 @@ npm install
 
 # 浏览器打开localhost:8001
 npm run dev
-
-# 打包压缩本地文件,打开dist/index.html
-npm run build
-
