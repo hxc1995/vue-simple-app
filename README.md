@@ -2,7 +2,7 @@
 
 
 # 克隆项目到本地 
-git clone git@github.com:hxc1995/vue-simple-app.git
+git clone https://github.com/xichengH/vue-simple-app.git
 
 # 安装依赖
 npm install
